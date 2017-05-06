@@ -1,0 +1,54 @@
+li {
+  font-weight: bold;
+}
+ul li {
+  color: red;
+}
+
+article img {
+  max-width: 100%;
+}
+
+.explanation > li {
+  color: black;
+}
+
+#blog-title {
+  font-style: italic;
+}
+
+.book-title h1, .book-title h2 {
+  color: grey;
+  font-size: 0.9em;
+}
+
+@keyframes wobble {
+  0% {
+    opacity: 0;
+    transform: rotateX(30deg);
+  }
+  50% {
+    opacity: .25;
+    transform: rotateY(10deg);
+    transform: rotateX(20deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotateY(0deg);
+    transform: rotateX(30deg);
+  }
+}
+
+article img {
+  animation-name: wobble;
+  animation-duration: 2s;
+}
+
+@media print {
+ article img {
+   display: none;
+ } 
+ header {
+   font-size: 2em;
+ }
+}
